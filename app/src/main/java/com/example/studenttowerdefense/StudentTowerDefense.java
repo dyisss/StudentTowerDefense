@@ -21,5 +21,19 @@ public class StudentTowerDefense extends Game{
         // Store reference to the main activity
         // This is used to update the score label
         this.activity = activity;
+
+        initNewGame();
+    }
+
+    /**
+     * Starts a new game.
+     * Resets the score and places all objects in the right place.
+     */
+    public void initNewGame() {
+        GameBoard board = getGameBoard();
+        board.removeAllObjects();
+
+        // Redraw the game view
+        board.updateView();
     }
 }

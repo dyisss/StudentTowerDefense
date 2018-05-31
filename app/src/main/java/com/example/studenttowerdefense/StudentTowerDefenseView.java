@@ -18,6 +18,7 @@ public class StudentTowerDefenseView extends GameBoardView{
      */
     public StudentTowerDefenseView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        initGameView();
     }
 
     /**
@@ -25,6 +26,15 @@ public class StudentTowerDefenseView extends GameBoardView{
      */
     public StudentTowerDefenseView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+        initGameView();
     }
 
+    private void initGameView() {
+        Log.d(TAG, "Loading all images");
+
+        spriteCache.setContext(this.getContext());
+
+        // Load the 'empty' cell bitmap
+        spriteCache.loadTile("empty", R.drawable.cell);
+    }
 }
