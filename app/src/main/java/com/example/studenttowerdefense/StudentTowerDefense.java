@@ -1,6 +1,7 @@
 package com.example.studenttowerdefense;
 
 
+import com.example.studenttowerdefense.nl.int6.studenttowerdefense.GameView;
 import com.example.studenttowerdefense.nl.int6.studenttowerdefense.model.Game;
 import com.example.studenttowerdefense.nl.int6.studenttowerdefense.model.GameBoard;
 
@@ -11,9 +12,9 @@ import com.example.studenttowerdefense.nl.int6.studenttowerdefense.model.GameBoa
 public class StudentTowerDefense extends Game{
 
     /** Reference to the main activity, so some labels can be updated. */
-    private MainActivity activity;
+    private GameView activity;
 
-    public StudentTowerDefense(MainActivity activity){
+    public StudentTowerDefense(GameView activity){
         //	Create	a	new	game	board	and	couple	it	to	this	game
         super(new StudentTowerDefenseBoard());
 
