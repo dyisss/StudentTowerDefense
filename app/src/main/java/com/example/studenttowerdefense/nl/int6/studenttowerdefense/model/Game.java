@@ -10,6 +10,7 @@ package com.example.studenttowerdefense.nl.int6.studenttowerdefense.model;
  */
 public abstract class Game {
 	private GameBoard gameBoard;
+	public static final String TAG = "TowerGame";
 
 	/**
 	 * Called when you create a new game.

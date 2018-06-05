@@ -32,5 +32,6 @@ public class HighScoreView extends AppCompatActivity {
         highScoreAdapter = new HighScoreAdapter(this,android.R.layout.simple_list_item_1, highScores);
         highScoreList = findViewById(R.id.highScoresList);
         highScoreList.setAdapter(highScoreAdapter);
+
     }
 }

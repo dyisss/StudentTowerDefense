@@ -1,5 +1,8 @@
 package com.example.studenttowerdefense.nl.int6.studenttowerdefense.GameUnits;
 
+import android.util.Log;
+
+import com.example.studenttowerdefense.nl.int6.studenttowerdefense.model.Game;
 import com.example.studenttowerdefense.nl.int6.studenttowerdefense.model.GameBoard;
 import com.example.studenttowerdefense.nl.int6.studenttowerdefense.model.GameObject;
 
@@ -8,6 +11,7 @@ import com.example.studenttowerdefense.nl.int6.studenttowerdefense.model.GameObj
  */
 
 public class Enemy extends GameObject {
+    public static final String ENEMY_IMAGE="";
 
     public Enemy(int x , int y , int width , int height  , float speed){
 
@@ -15,11 +19,19 @@ public class Enemy extends GameObject {
 
     @Override
     public String getImageId() {
-        return null;
+        return ENEMY_IMAGE;
     }
 
     @Override
     public void onTouched(GameBoard gameBoard) {
+        Log.d(Game.TAG,"Touched Tower");
 
+        //When a Tower is touched
+
+        //implement check if position if over colliding with other objects
+
+        //redraw app
+        gameBoard.updateView();
     }
+
 }

@@ -16,26 +16,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".nl.int6.studenttowerdefense.GameView"
-            android:parentActivityName=".MainActivity">
+        <activity android:name=".nl.int6.studenttowerdefense.view.MapView"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/Map_Selection">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
+        <activity android:name=".nl.int6.studenttowerdefense.GameView"
+            android:parentActivityName=".nl.int6.studenttowerdefense.view.MapView"
+            android:label="@string/Student_Tower_Defense">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".nl.int6.studenttowerdefense.view.MapView"/>
+        </activity>
         <activity android:name=".nl.int6.studenttowerdefense.view.HighScoreView"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:label="@string/high_scores">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
         <activity android:name=".nl.int6.studenttowerdefense.view.SettingsView"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:label="@string/settings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
         <activity android:name=".nl.int6.studenttowerdefense.view.RuleView"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:label="@string/rules">
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity"/>

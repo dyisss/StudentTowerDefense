@@ -19,4 +19,13 @@
     <string name="apply">Apply</string>
     <string name="name">Name</string>
     <string name="score">Score</string>
+    <string name="confrim">Confrim</string>
+    <string name="level_1">Level 1</string>
+    <string name="level_2">Level 2</string>
+    <string name="level_3">Level 3</string>
+    <string name="lvl_1_image">lvl 1 image</string>
+    <string name="lvl_2_image">lvl 2 image</string>
+    <string name="lvl_3_image">lvl 3 image</string>
+    <string name="Map_Selection">Map Selection</string>
+    <string name="Student_Tower_Defense">Student Tower Defense</string>
 </resources>
